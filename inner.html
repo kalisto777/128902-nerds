@@ -39,39 +39,47 @@
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<div class="cost">
 						<p>Стоимость</p>
-						/*не знаю как сделать бигунок*/
-						/*сумму от и до*/
-						/*надо ли вообще это в форму заносить?*/
+						<input type="range" multiple><br>
+						<lebel for="cost-from">от</lebel>
+						<input type="text" id="cost-from" name="from">	
+						<lebel for="cost-before" name="before">до</lebel>
+						<input type="text" id="cost-before" name="before">
 					</div>
 					<div class="net">
 						<p>Сетка</p>
-						<label>
-                			<input type="radio" name="net-group" value="adaptive" checked>
-                			Адаптивная
-            		 		</label><br>
+						<div class="net-adaptive">
+							<label>
+                				<input type="radio" name="net-group" value="adaptive" checked>
+                				Адаптивная
+            		 		</label>
+            		 	</div>
+            		 	<div class="net-fixed">
             		 		<label>
                					<input type="radio" name="net-group" value="fixed">
-                			Фиксированная
-            		 		</label><br>
+                				Фиксированная
+            		 		</label>
+            		 	</div>
+            		 	<div class="net-rubber">
             		 		<label>
                					<input type="radio" name="net-group" value="rubber">
-                			Резиновая
-            		 		</label><br>
+                				Резиновая
+            		 		</label>
+            		 	</div>
 					</div>
 					<div class="features">
 						<p>Особенности</p>
-					 		<input type="checkbox" name="slider" id="slider-field" checked>
-					 			<label for="slider-field">Слайдер</label><br>
-					 		<input type="checkbox" name="benefits-unit" id="benefits-unit-field">
-					 			<label for="benefits-unit-field">Блок преимуществ</label><br>
-					 		<input type="checkbox" name="news" id="news-field" checked>
-					 			<label for="news-field">Новости</label><br>
-					 		<input type="checkbox" name="gallery" id="gallery-field">
-					 			<label for="gallery-field">Галерея</label><br>
-					 		<input type="checkbox" name="basket" id="basket-field">
-					 			<label for="basket-field">Корзина</label><br>
+					 	<input type="checkbox" name="slider" id="slider-field" checked>
+					 		<label for="slider-field">Слайдер</label><br>
+					 	<input type="checkbox" name="benefits-unit" id="benefits-unit-field">
+					 		<label for="benefits-unit-field">Блок преимуществ</label><br>
+					 	<input type="checkbox" name="news" id="news-field" checked>
+					 		<label for="news-field">Новости</label><br>
+					 	<input type="checkbox" name="gallery" id="gallery-field">
+					 		<label for="gallery-field">Галерея</label><br>
+					 	<input type="checkbox" name="basket" id="basket-field">
+					 		<label for="basket-field">Корзина</label><br>
 					</div>
-					<button type="submit" value="Показать">Показать
+					<button type="submit" value="show">Показать
 					</button>
 				</form>
 			</div>
@@ -83,23 +91,77 @@
 					<a class="by-price" hres="#">по цене</a>
 					<a class="by-type" hres="#">по типу</a>
 					<a class="by-name" hres="#">по названию</a>
-					<a class="by-bottom" hres="#"></a>/*не уверена, что стрелки сортировки задаются через ссылку */
+					<a class="by-bottom" hres="#"></a>
 					<a class="by-top" hres="#"></a>
 				</div>
 			</div>
-			<div class="">
-				<img scr="http://placehold.it/150x100">
-				<img scr="http://placehold.it/150x100">
-				<img scr="http://placehold.it/150x100">
-				<img scr="http://placehold.it/150x100">
-				<img scr="http://placehold.it/150x100">
-				<img scr="http://placehold.it/150x100">
+			<div class="layout">
+				<div class="layout-sedona">
+					<div class="image-sedona">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-sedona">
+						<p class="name-layout">Sedona</p>
+						<p class="info-layout">Информационный сайт для туристов</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
+				<div class="layout-pink">
+					<div class="image-pink">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-pink">
+						<p class="name-layout">Pink app</p>
+						<p class="info-layout">Продуктивный лендинг приложения для ios и android</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
+				<div class="layout-barbershop">
+					<div class="image-barbershop">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-barbershop">
+						<p class="name-layout">Barbershop</p>
+						<p class="info-layout">Сайт салона красоты. Для мужчин, да.</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
+				<div class="layout-mishka">
+					<div class="image-mishka">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-mishka">
+						<p class="name-layout">Mishka</p>
+						<p class="info-layout">Интернет-магазин вязанных игрушек</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
+				<div class="layout-a-plus">
+					<div class="image-a-plus">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-a-plus">
+						<p class="name-layout">A Plus</p>
+						<p class="info-layout">Лендинг курсов повышения квалификации</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
+				<div class="layout-kvast">
+					<div class="image-kvast">
+						<img scr="http://placehold.it/150x100">
+					</div>
+					<div class="info-kvast">
+						<p class="name-layout">Кваст</p>
+						<p class="info-layout">Промо-сайт производителя крафтового кваса</p>
+						<button type="submit" value="order">9 900 руб.</button>
+					</div>
+				</div>
 			</div>
-			<div class="">
-						<a href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">Следующая</a>
+			<div class="pages">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">Следующая</a>
 			</div>
 		</main>
 		<footer class="main-footer">
