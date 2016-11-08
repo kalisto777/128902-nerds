@@ -15,3 +15,188 @@ h2 {
 	font-size: 20px;
 	font-weight: bold;
 }
+
+/*общие свойства*/
+
+.clearfix::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.container {
+  	width: 1200px;
+  	margin: 0 auto;
+  	padding: 0 20px;
+}
+
+.main-header {
+	background-color: #f0c2d1;
+}
+
+.main-logo {
+	float: left;
+ 	width: 160px;
+	margin-right: 140px;
+	background-color: #c2cef0;
+}
+
+.main-navigation {
+  	float: left;
+  	width: 660px;
+  	background-color: #c2cef0;
+}
+
+.main-basket {
+  	float: right;
+  	width: 140px;
+  	background-color: #c2cef0;
+}
+
+/*index.html*/
+
+.news {
+	margin-bottom: 83px;
+  	background-color: #c2f0ee;
+}
+
+.description-news {
+	float: left;
+ 	width: 400px;
+ 	margin-top: 75px;
+}
+
+.image-news {
+	float: right;
+	width: 760px;
+	min-height: 431px;
+}
+
+.services {
+  	margin-bottom: 81px;
+	background-color: #c2f0ee;
+}
+
+.services-item {
+ 	float: left;
+	width: 300px;
+	min-height: 147px;
+	margin-right: 100px;
+	background-color: #c6f0c2;
+}
+
+.services-item:last-child {
+  	margin-right: 0;
+}
+
+.about-us {
+	margin-bottom: 77px;
+	background-color: #c2f0ee;
+}
+
+.who-are-we {
+	float: left;
+	width: 700px;
+	margin-top: 79px;
+	background-color: #c6f0c2;
+}
+
+.interest {
+	float: right;
+	width: 360px;
+	min-height: 208px;
+	background-color: #c6f0c2;
+}
+
+.partners {
+	margin-bottom: 81px;
+	background-color: #c2f0ee;
+}
+
+.btn {
+	display: inline-block;
+	width: 260px;
+	margin-right: 40px;
+	background-color: #c6f0c2;
+}
+
+.btn:last-child {
+	margin-right: 0px;
+}
+
+/*inner.html*/
+
+.templates {
+	display: block;
+	margin-top: 75px;
+	margin-bottom: 115px;
+	background-color: #c2cef0;
+}
+
+.search {
+	float: left;
+	margin-top: 60px;
+	width: 260px;
+	background-color: #f0c2d1;
+}
+
+.sorting {
+	float: right;
+	width: 760px;
+	margin-top: 60px;
+	background-color: #f0c2d1;
+}
+
+.layout {
+	float: right;
+	width: 760px;
+	background-color: #c2cef0;
+}
+
+.layout-item {
+	float: left;
+	width: 360px;
+	min-height: 616px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.layout-item:nth-child(2),
+.layout-item:nth-child(4),
+.layout-item:nth-child(6) {
+	margin-right: 0;
+}
+
+.pages {
+	float: left;
+	width: 760px;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	background-color: #c6f0c2;
+}
+
+/*общие свойства*/
+
+.main-footer {
+  	background-color: #f0c2d1;
+}
+
+.footer-map {
+	width: 1440px;
+	margin-bottom: 67px;
+	background-color: #c2cef0;
+}
+
+.footer-social {
+  	float: left;
+ 	width: 260px;
+	margin-right: 140px;
+	background-color: #c2cef0;
+}
+
+.footer-benefit {
+	float: left;
+	width: 560px;
+	background-color: #c2cef0;
+}
+
