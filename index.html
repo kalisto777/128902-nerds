@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Nerd'S</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -28,7 +30,7 @@
 					</ul>
 				</nav>
 				<div class="main-basket">
-					<a class="basket" href="#"><img src="img/cart-icon.png" width="15" height="15">Корзина</a>
+					<a class="basket" href="#">Корзина</a>
 				</div>
 			</div>
 		</header>
@@ -36,8 +38,8 @@
 			<div class="news clearfix">
 				<div class="description-news">
 					<h1>Долго, дорого, скрупулезно.</h1>
-					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-					<a href="#">Узнать больше</a>
+					<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+					<a class="btn" href="#">Узнать больше</a>
 				</div>
 				<div class="image-news">
 					<img src="img/slider-1.png" width="760" height="431">
@@ -51,7 +53,7 @@
 					<div class="services-description">
 						<h2 class="services-name">ВЕБ-сайты</h2>
 						<p>Мир никогда не будет прежним после того, как увидит ваш сайт</p>
-						<a name="order" href="#">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</div>
 				</div>
 				<div class="services-item">
@@ -61,7 +63,7 @@
 					<div class="services-description">
 						<h2 class="services-name">Приложения</h2>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<a name="order" href="#">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</div>
 				</div>
 				<div class="services-item">
@@ -71,7 +73,7 @@
 					<div class="services-description">
 						<h2 class="services-name">Презентации</h2>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<a name="order" href="#">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</div>
 				</div>	
 			</section>
@@ -99,8 +101,8 @@
 					<div class="logo">
 						<img src="img/nerds-illustration.jpg" width="360" height="208">
 					</div>
-					<div class="accuracy">
-						<p>С 2004 года любим точность во всем:</p>
+					<div class="accuracy clearfix">
+						<p class="accuracy-item">С 2004 года любим точность во всем:</p>
 						<div class="percent">
 							<h2>146%</h2>
 							<p>Уровень самоотдачи</p>
@@ -117,40 +119,35 @@
 				</div>
 			</div>
 			<div class="partners">
-				<a class="btn" href="https://htmlacademy.ru"><img src="img/logo-1.png" width="199" height="68"></a>
-				<a class="btn" href="#"><img src="img/logo-2.png" width="209" height="90"></a>
-				<a class="btn" href="#"><img src="img/logo-3.png" width="185" height="52"></a>
-				<a class="btn" href="#"><img src="img/logo-4.png" width="173" height="84"></a>
+				<a class="partners-item" href="https://htmlacademy.ru"><img src="img/logo-1.png" width="199" height="68"></a>
+				<a class="partners-item" href="#"><img src="img/logo-2.png" width="209" height="90"></a>
+				<a class="partners-item" href="#"><img src="img/logo-3.png" width="185" height="52"></a>
+				<a class="partners-item" href="#"><img src="img/logo-4.png" width="173" height="84"></a>
 			</div>
 		</main>
-		<footer class="main-footer">
-			<div class="container clearfix">
-				<div class="footer-map">
-					<div class="map">
-						<img src="img/map.png" width="1440" height="416">
-					</div>
-					<div class="checkbox">
-						<img src="img/map-marker.png" width="231" height="190">
-					</div>
-					<div class="map-contact">
-						<p class="name">Nerds design studio</p>
-						<p class="address">
-						191186, Санкт-Петербург<br>
-						ул. Б. Конюшенная, д. 19/8</p>
-						<p clas="number">тел. +7 (812) 275-75-75</p>
-						<a class="write" href="#">Напишите нам</a>
-					</div>
+		<footer class="main-footer clearfix">
+			<div class="footer-map">
+				<div class="checkbox">
+					<img src="img/map-marker.png" width="231" height="190">
 				</div>
-				<section class="footer-social">
-          			<a class="social-btn social-btn-vk" href="#"><img src="img/vk-icon.png" width="26" height="15">вконтакте</a>
-          			<a class="social-btn social-btn-fb" href="#"><img src="img/fb-icon.png" width="12" height="22">фейсбук</a>
-          			<a class="social-btn social-btn-inst" href="#"><img src="img/insta-icon.png" width="21" height="21">инстаграм</a>
-        		</section>
-        		<section class="footer-benefit">
-        			<h3>Давайте дружить, это выгодно!</h3>
-        			<p>Скидка 10% для друзей из социальных сетей</p>
-        		</section>
-        	</div>
+				<div class="map-contact">
+					<p class="name">Nerds design studio</p>
+					<p class="address">
+					191186, Санкт-Петербург<br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p clas="number">тел. +7 (812) 275-75-75</p>
+					<a class="btn" href="#">Напишите нам</a>
+				</div>
+			</div>
+			<section class="footer-social">
+          		<a class="social-btn social-btn-vk" href="#"></a>
+          		<a class="social-btn social-btn-fb" href="#"></a>
+          		<a class="social-btn social-btn-inst" href="#"></a>
+        	</section>
+        	<section class="footer-benefit">
+        		<h3>Давайте дружить, это выгодно!</h3>
+        		<p>Скидка 10% для друзей из социальных сетей</p>
+        	</section>
 		</footer>
 	</body>
 </html>
